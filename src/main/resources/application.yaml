@@ -6,9 +6,14 @@ logging:
     org.springframework.security: trace
 
 spring:
+  application:
+    name: oauth-auth-server
   config:
     import: optional:file:.env[.properties]
-
+  # colored console log messsages
+  output:
+    ansi:
+      enabled: always
   security:
     user:
       name: user
